@@ -6,12 +6,11 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 
-const pages = ['About', 'Projects', 'Testimonials'];
+const pages = ['About', 'Projects', 'Testimonials', 'Contacts'];
 
 
 export default function Navbar() {
@@ -26,9 +25,8 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar sx={{backgroundColor: 'black'}}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+    <AppBar fixed sx={{backgroundColor: 'black',  mr: 0, width: '100%'}}>
+        <Toolbar disableGutters sx={{height: '18px', pl: '10px', pr: '10px'}}>
           <Typography
             variant="h6"
             noWrap
@@ -37,8 +35,7 @@ export default function Navbar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Raleway',
-              fontWeight: 300,
+              fontWeight: 400,
               letterSpacing: '.3rem',
               color: 'white',
               textDecoration: 'none',
@@ -93,7 +90,7 @@ export default function Navbar() {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'Raleway',
-              fontWeight: 700,
+              fontWeight: 400,
               letterSpacing: '.3rem',
               color: 'white',
               textDecoration: 'none',
@@ -114,7 +111,6 @@ export default function Navbar() {
           </Box>
 
         </Toolbar>
-      </Container>
     </AppBar>
   );
 }

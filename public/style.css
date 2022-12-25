@@ -1,21 +1,17 @@
 body {
-    background: rgb(12, 12, 23);
-    background: radial-gradient(circle, rgba(12, 12, 23, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    font-family: 'Raleway';
+    color: black;
+    background-color: white;
 }
 
 .section {
-    background-color: #feca57;
     font-size: 15px;
-    border-radius: 3px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    margin-top: 80px;
+    margin-top: 64px;
     text-align: center;
+    font-weight: 400;
 }
 
 .about {
-    font-family: 'Orbitron', cursive;
-    color: white;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 4px;
 }
