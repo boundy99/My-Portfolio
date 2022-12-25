@@ -14,5 +14,10 @@
     }
     
     .about {
-        background-image: url("https://t4.ftcdn.net/jpg/04/31/44/89/360_F_431448941_oo9a7gWADWwWjyYBDmdcYvuIZdss3sxh.jpg");
+        display: 'flex';
+        justify-content: center;
+        font-family: 'Orbitron', cursive;
+        color: white;
+        height: 100px;
+        font-size: 20px;
     }
