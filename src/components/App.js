@@ -12,29 +12,29 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Container  className='container' maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px', mt: '64px', mr: '0px'}}>
+      <Container maxWidth={false} disableGutters sx={{backgroundColor: 'black', p: '10px', mt: '64px', mr: '0px'}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='ABOUT'/>
       </Box>
-      <Box sx={{width: '45%', margin: 'auto', textAlign:'center'}}>
+      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
       <About/>
       </Box>
       </Container>
 
-      <Container  className='container' maxWidth={false} disableGutters sx={{backgroundColor: '#757575', p: '10px',}}>
+      <Container maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px',}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
-      <Section text='PROJECTS'/>
+      <Section text='ABOUT'/>
       </Box>
-      <Box sx={{width: '55%', margin: 'auto', textAlign:'center'}}>
+      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
       <About/>
       </Box>
       </Container>
 
-      <Container  className='container' maxWidth={false} disableGutters sx={{backgroundColor: 'red', p: '10px'}}>
+      <Container maxWidth={false} disableGutters sx={{backgroundColor: 'black', p: '10px'}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='ABOUT'/>
       </Box>
-      <Box sx={{width: '55%', margin: 'auto', textAlign:'center'}}>
+      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
       <About/>
       </Box>
       </Container>
