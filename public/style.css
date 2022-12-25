@@ -17,15 +17,5 @@ body {
     font-family: 'Orbitron', cursive;
     color: white;
     font-size: 20px;
-    /* padding-left: 25%;
-    padding-right: 25%; */
     letter-spacing: 4px;
 }
-
-
-/* .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-} */
