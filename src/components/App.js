@@ -7,8 +7,11 @@ export default function App() {
   return (
     <div>
       <Navbar />
+      <div>
       <Section text='ABOUT'/>
       <About/>
+      </div>
+      
     </div>
   )
   
