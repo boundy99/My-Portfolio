@@ -92,16 +92,16 @@ export default function Navbar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'monospace',
+              fontFamily: 'Raleway',
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'white',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            MYPORTFOLIO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, justifyContent: 'flex-end', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
