@@ -25,7 +25,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar fixed sx={{backgroundColor: 'black',  mr: 0, width: '100%'}}>
+    <AppBar fixed sx={{backgroundColor: '#212121',  mr: 0, width: '100%'}}>
         <Toolbar disableGutters sx={{height: '18px', pl: '10px', pr: '10px'}}>
           <Typography
             variant="h6"
