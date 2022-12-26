@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo'
-import { Card, CardContent,  Typography, Container, Box} from '@mui/material';
+import { Card, CardContent,  Typography, Container, Box, Grid} from '@mui/material';
 
 export default function ProjectCard(props) {
   return (
@@ -20,13 +20,37 @@ export default function ProjectCard(props) {
     <Typography variant="h5" sx={{pb: '15px', textAlign:'center', color: '#01579b'}}>TOOLS USED </Typography>
 
     <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent:'center'}}>
-    <Logo logo={props.logoHTML}/> 
-    <Logo logo={props.logoCSS}/>
-    <Logo logo={props.logoJs}/>
-    <Logo logo={props.logoEJs}/>
-    <Logo logo={props.logoReact}/>
-    <Logo logo={props.logoNodeJs}/>
-    <Logo logo={props.logoMongoDB}/>
+    <Grid container sx= {{justifyContent:'center'}}>
+      <Grid item>
+      <Logo logo={props.logoHTML}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoCSS}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoJs}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoEJs}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoReact}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoNodeJs}/> 
+      </Grid>
+
+      <Grid item>
+      <Logo logo={props.logoMongoDB}/> 
+      </Grid>
+    </Grid>
+    
+   
     </Box>
     
     

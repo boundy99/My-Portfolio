@@ -7,7 +7,8 @@ import data from '../data'
 
 import { 
   Container,
-  Box 
+  Box, 
+  Grid
 } from '@mui/material';
 
 function createProjectCard(data){
@@ -42,12 +43,20 @@ export default function App() {
       </Container>
 
       <Container maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px',}}>
-      <Box sx={{width: '25%', margin: 'auto'}}>
+      <Box sx={{width: '25%', margin: 'auto'}} >
       <Section text='PROJECTS'/>
       </Box>
-      <Box sx={{width: '45%', margin: 'auto'}}>
-      {data.map(createProjectCard)}
+      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+      <Grid container spacing={2} sx={{ display: 'flex', flexDirection: 'row',  justifyContent: 'left', alignItems: 'center' }}>
+        <Grid item md={6} sm={10}>
+        <Box>
+        {data.map(createProjectCard)}
+        </Box>
+        </Grid>
+      </Grid>
       </Box>
+      
+      
       </Container>
   
     </div>
