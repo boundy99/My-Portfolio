@@ -4,6 +4,10 @@ body {
     background-color: white;
 }
 
+img {
+    width: 20%
+}
+
 .section {
     font-size: 13px;
     text-align: center;

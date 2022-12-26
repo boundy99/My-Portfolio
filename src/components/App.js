@@ -4,7 +4,7 @@ import Section from './Section'
 import About from "./About"
 import ProjectCard from "./ProjectCard"
 import data from '../data'
-
+import images from '../images/css.png'
 import { 
   Container,
   Box 
@@ -23,7 +23,7 @@ function createProjectCard(data){
 export default function App() {
 
   return (
-    <div>
+    <div className='app'>
       <Navbar />
       <Container maxWidth={false} disableGutters sx={{backgroundColor: 'black', p: '10px', mt: '64px', mr: '0px'}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
@@ -41,7 +41,6 @@ export default function App() {
       <Box sx={{width: '30%', margin: 'auto'}}>
       {data.map(createProjectCard)}
       </Box>
-      {/* <img src='images/html.png' alt='sks'/> */}
       </Container>
   
     </div>
