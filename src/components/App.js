@@ -4,7 +4,7 @@ import Section from './Section'
 import About from "./About"
 import ProjectCard from "./ProjectCard"
 import data from '../data'
-import images from '../images/css.png'
+
 import { 
   Container,
   Box 
@@ -38,7 +38,7 @@ export default function App() {
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='PROJECTS'/>
       </Box>
-      <Box sx={{width: '30%', margin: 'auto'}}>
+      <Box sx={{width: '50%', margin: 'auto'}}>
       {data.map(createProjectCard)}
       </Box>
       </Container>

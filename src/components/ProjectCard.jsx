@@ -1,32 +1,37 @@
 import React from 'react'
 import Logo from './Logo'
-import { Card, CardContent,  Typography, Container, Box } from '@mui/material';
+import { Card, CardContent,  Typography, Container, Box} from '@mui/material';
 
 export default function ProjectCard(props) {
   return (
     <div>
-    <Container>
-    <Card>
+    <Container maxWidth={false} disableGutters>
+    <Card sx={{borderRadius: '20px'}}>
 
-    <Box>
+    <Box sx={{textAlign: 'center'}}>
     
-    <Typography> {props.name}</Typography>
+    <Typography variant="h4" sx={{pt: '25px', color: 'white', backgroundColor:'#f50057'}}> {props.name}</Typography>
     </Box>
 
-    <Box>
+    
     <CardContent>
-    <Typography>Description: {props.description}</Typography>
-    <Typography> Tools used: 
+    <Typography variant="h5" sx={{pb: '15px', textAlign:'center', color: '#01579b'}}>DESCRIPTION </Typography>
+    <Typography variant="h6" sx={{pb: '15px', textAlign:'center'}}>{props.description}</Typography>
+    <Typography variant="h5" sx={{pb: '15px', textAlign:'center', color: '#01579b'}}>TOOLS USED </Typography>
+
+    <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent:'center'}}>
     <Logo logo={props.logo}/> 
-    {/* <Logo src={props.logo}/>
-    <Logo src={props.logo}/>
-    <Logo src={props.logo}/>
-    <Logo src={props.logo}/>
-    <Logo src={props.logo}/>
-    <Logo src={props.logo}/> */}
-    </Typography>
-    </CardContent>
+    <Logo logo={props.logo}/>
+    <Logo logo={props.logo}/>
+    <Logo logo={props.logo}/>
+    <Logo logo={props.logo}/>
+    <Logo logo={props.logo}/>
+    <Logo logo={props.logo}/>
     </Box>
+    
+    
+    </CardContent>
+    
     </Card></Container>
     
     </div>
