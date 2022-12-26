@@ -16,7 +16,14 @@ function createProjectCard(data){
       key = {data.id}
       name = {data.name}
       description = {data.description}
-      logo={data.logoCSS}
+      logoHTML={data.logoHTML}
+      logoCSS={data.logoCSS}
+      logoJs={data.logoJs}
+      logoEJs={data.logoEJs}
+      logoReact={data.logoReact}
+      logoNodeJs={data.logoNodeJs}
+      logoMongoDB={data.logoMongoDB}
+    
     />
   )
 }

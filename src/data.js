@@ -4,17 +4,20 @@ import jsImage from './images/javascript.png'
 import ejsImage from './images/ejs.png'
 import reactImage from './images/react.png'
 import nodejsImage from './images/nodejs.png'
-import mongodbImage from './images/mongod.png'
+import mongodbImage from './images/mongodb.png'
 
 const data =[
     {
         id: 1,
         name: 'BLOG WEBSITE',
         description: 'This is a Instagram clone using frontend and backend web development tools (React, Node.js, Express.js, Firebase)',
+        logoHTML: htmlImage,
         logoCSS: cssImage,
+        logoJs: jsImage,
+        logoEJs: ejsImage,
         logoReact: reactImage,
-        logoHTML: 'images/html.png',
-        logoJS: 'images/javascript.png'
+        logoNodeJs: nodejsImage,
+        logoMongoDB: mongodbImage
     }
 ]
 
