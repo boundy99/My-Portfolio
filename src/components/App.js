@@ -2,11 +2,24 @@ import React from "react"
 import Navbar from './Navbar'
 import Section from './Section'
 import About from "./About"
+import ProjectCard from "./ProjectCard"
+import data from '../data'
 
 import { 
   Container,
   Box 
 } from '@mui/material';
+
+function createProjectCard(data){
+  return (
+    <ProjectCard 
+      key = {data.id}
+      name = {data.name}
+      description = {data.description}
+      logo={data.logoCSS}
+    />
+  )
+}
 export default function App() {
 
   return (
@@ -16,29 +29,21 @@ export default function App() {
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='ABOUT'/>
       </Box>
-      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
+      <Box sx={{width: '50%', margin: 'auto', textAlign:'center'}}>
       <About/>
       </Box>
       </Container>
 
       <Container maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px',}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
-      <Section text='ABOUT'/>
+      <Section text='PROJECTS'/>
       </Box>
-      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
-      <About/>
+      <Box sx={{width: '30%', margin: 'auto'}}>
+      {data.map(createProjectCard)}
       </Box>
+      {/* <img src='images/html.png' alt='sks'/> */}
       </Container>
-
-      <Container maxWidth={false} disableGutters sx={{backgroundColor: 'black', p: '10px'}}>
-      <Box sx={{width: '25%', margin: 'auto'}}>
-      <Section text='ABOUT'/>
-      </Box>
-      <Box sx={{width: '30%', margin: 'auto', textAlign:'center'}}>
-      <About/>
-      </Box>
-      </Container>
-      
+  
     </div>
   )
   
