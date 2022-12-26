@@ -18,6 +18,19 @@ const data =[
         logoReact: reactImage,
         logoNodeJs: nodejsImage,
         logoMongoDB: mongodbImage
+    },
+
+    {
+        id: 2,
+        name: 'BLOG WEBSITE',
+        description: 'This is a Instagram clone using frontend and backend web development tools (React, Node.js, Express.js, Firebase)',
+        logoHTML: htmlImage,
+        logoCSS: cssImage,
+        logoJs: jsImage,
+        logoEJs: null,
+        logoReact: reactImage,
+        logoNodeJs: nodejsImage,
+        logoMongoDB: mongodbImage
     }
 ]
 

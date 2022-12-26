@@ -45,7 +45,7 @@ export default function App() {
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='PROJECTS'/>
       </Box>
-      <Box sx={{width: '50%', margin: 'auto'}}>
+      <Box sx={{width: '45%', margin: 'auto'}}>
       {data.map(createProjectCard)}
       </Box>
       </Container>
