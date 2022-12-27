@@ -20,7 +20,7 @@ export default function About() {
     I am currently enrolled in a computer science program at The City College of New York, where I am working towards my Bachelor's degree. I have previously earned an Associate's degree in computer science from Borough of Manhattan Community College, where I was awarded Dean's list for multiple semesters
     </Typography>
 
-    <Typography variant='inherit' sx={{pt:'18px'}}>
+    <Typography variant='inherit' sx={{pt:'18px', pb:'50px'}}>
     In my technical projects, I have worked on a Tinder UI clone for dogs using HTML, CSS, and Bootstrap, an ongoing Instagram clone using React, Node.js, and other technologies, and a virtual reality project using C# and Unity to teach linked list data structures. I have a wide range of technical skills, including programming languages such as C++, Java, C#, and Python, as well as frameworks and technologies like React, Node.js, and Unity.
     </Typography>
    
