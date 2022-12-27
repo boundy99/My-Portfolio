@@ -1,19 +1,19 @@
-import React from 'react';
-import { Container, Typography } from '@mui/material';
+import React from "react";
+import { Container, Typography } from "@mui/material";
 export default function About() {
   return (
     <Container
-      sx={{ fontSize: '20px', fontWeight: '10px', letterSpacing: '5px' }}
+      sx={{ fontSize: "20px", fontWeight: "10px", letterSpacing: "5px" }}
     >
       <Typography variant="inherit">Hi, I am Abdoulaye</Typography>
 
-      <Typography variant="inherit" sx={{ pt: '18px' }}>
+      <Typography variant="inherit" sx={{ pt: "18px" }}>
         I'm a software engineer, and I developed an interest for computer
         science as a result of being an expert at adjusting the configurations
         on my home's computers, televisions, and phones.
       </Typography>
 
-      <Typography variant="inherit" sx={{ pt: '18px' }}>
+      <Typography variant="inherit" sx={{ pt: "18px" }}>
         I'm a computer science major presently enrolled at City College of New
         York. I've been working on algorithms and object oriented programming.
         I've worked on several solo and group projects, including a Google
@@ -22,7 +22,7 @@ export default function About() {
         js.
       </Typography>
 
-      <Typography variant="inherit" sx={{ pt: '18px' }}>
+      <Typography variant="inherit" sx={{ pt: "18px" }}>
         I am currently enrolled in a computer science program at The City
         College of New York, where I am working towards my Bachelor's degree. I
         have previously earned an Associate's degree in computer science from
@@ -30,7 +30,7 @@ export default function About() {
         for multiple semesters
       </Typography>
 
-      <Typography variant="inherit" sx={{ pt: '18px', pb: '50px' }}>
+      <Typography variant="inherit" sx={{ pt: "18px", pb: "50px" }}>
         In my technical projects, I have worked on a Tinder UI clone for dogs
         using HTML, CSS, and Bootstrap, an ongoing Instagram clone using React,
         Node.js, and other technologies, and a virtual reality project using C#
