@@ -4,9 +4,9 @@ import { Card, CardContent,  Typography, Container, Box, Grid} from '@mui/materi
 
 export default function ProjectCard(props) {
   return (
-    <div>
-    <Container maxWidth={false} disableGutters>
-    <Card sx={{borderRadius: '20px'}}>
+    
+    <Container maxWidth={false} disableGutters sx={{ maxWidth: '650px'}}>
+    <Card sx={{borderRadius: '20px', mb: '30px'}}>
 
     <Box sx={{textAlign: 'center'}}>
     
@@ -58,6 +58,6 @@ export default function ProjectCard(props) {
     
     </Card></Container>
     
-    </div>
+  
   )
 }

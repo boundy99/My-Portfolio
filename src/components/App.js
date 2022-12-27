@@ -7,8 +7,7 @@ import data from '../data'
 
 import { 
   Container,
-  Box, 
-  Grid
+  Box
 } from '@mui/material';
 
 function createProjectCard(data){
@@ -32,7 +31,10 @@ export default function App() {
 
   return (
     <div className='app'>
+    {/* ---------------Navbar--------------- */}
       <Navbar />
+
+    {/* ---------------About--------------- */}
       <Container maxWidth={false} disableGutters sx={{backgroundColor: 'black', p: '10px', mt: '64px', mr: '0px'}}>
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='ABOUT'/>
@@ -42,20 +44,19 @@ export default function App() {
       </Box>
       </Container>
 
-      <Container maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px',}}>
-      <Box sx={{width: '25%', margin: 'auto'}} >
+      {/* ---------------Projects--------------- */}
+
+      <Container maxWidth={false} disableGutters sx={{backgroundColor: '#212121', p: '10px'}}>
+      <Box sx={{width: '25%', margin: 'auto',}} >
       <Section text='PROJECTS'/>
       </Box>
-      <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-      <Grid container spacing={2} sx={{ display: 'flex', flexDirection: 'row',  justifyContent: 'left', alignItems: 'center' }}>
-        <Grid item md={6} sm={10}>
-        <Box>
-        {data.map(createProjectCard)}
-        </Box>
-        </Grid>
-      </Grid>
-      </Box>
       
+      <Box sx={{ justifyContent:'center', margin: 'auto', width: "50%"}}>
+      
+      {data.map(createProjectCard)}
+      
+      
+      </Box>
       
       </Container>
   
