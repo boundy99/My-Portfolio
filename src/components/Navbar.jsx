@@ -1,15 +1,15 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
 
-const pages = ['About', 'Projects', 'Testimonials', 'Contacts'];
+const pages = ["About", "Projects", "Testimonials", "Contacts"];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,9 +25,9 @@ export default function Navbar() {
   return (
     <AppBar
       position="fixed"
-      sx={{ backgroundColor: '#212121', mr: 0, width: '100%' }}
+      sx={{ backgroundColor: "#212121", mr: 0, width: "100%" }}
     >
-      <Toolbar disableGutters sx={{ height: '18px', pl: '10px', pr: '10px' }}>
+      <Toolbar disableGutters sx={{ height: "18px", pl: "10px", pr: "10px" }}>
         <Typography
           variant="h6"
           noWrap
@@ -35,17 +35,17 @@ export default function Navbar() {
           href="/"
           sx={{
             mr: 2,
-            display: { xs: 'none', md: 'flex' },
+            display: { xs: "none", md: "flex" },
             fontWeight: 400,
-            letterSpacing: '.3rem',
-            color: 'white',
-            textDecoration: 'none'
+            letterSpacing: ".3rem",
+            color: "white",
+            textDecoration: "none",
           }}
         >
           MYPORTFOLIO
         </Typography>
 
-        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+        <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -60,18 +60,18 @@ export default function Navbar() {
             id="menu-appbar"
             anchorEl={anchorElNav}
             anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'left'
+              vertical: "bottom",
+              horizontal: "left",
             }}
             keepMounted
             transformOrigin={{
-              vertical: 'top',
-              horizontal: 'left'
+              vertical: "top",
+              horizontal: "left",
             }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
             sx={{
-              display: { xs: 'block', md: 'none' }
+              display: { xs: "block", md: "none" },
             }}
           >
             {pages.map((page) => (
@@ -88,13 +88,13 @@ export default function Navbar() {
           href=""
           sx={{
             mr: 2,
-            display: { xs: 'flex', md: 'none' },
+            display: { xs: "flex", md: "none" },
             flexGrow: 1,
-            fontFamily: 'Raleway',
+            fontFamily: "Raleway",
             fontWeight: 400,
-            letterSpacing: '.3rem',
-            color: 'white',
-            textDecoration: 'none'
+            letterSpacing: ".3rem",
+            color: "white",
+            textDecoration: "none",
           }}
         >
           MYPORTFOLIO
@@ -102,15 +102,15 @@ export default function Navbar() {
         <Box
           sx={{
             flexGrow: 1,
-            justifyContent: 'flex-end',
-            display: { xs: 'none', md: 'flex' }
+            justifyContent: "flex-end",
+            display: { xs: "none", md: "flex" },
           }}
         >
           {pages.map((page) => (
             <Button
               key={page}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 2, color: "white", display: "block" }}
             >
               {page}
             </Button>

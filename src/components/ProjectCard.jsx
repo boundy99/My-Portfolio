@@ -1,55 +1,55 @@
-import React from 'react';
-import Logo from './Logo';
+import React from "react";
+import Logo from "./Logo";
 import {
   Card,
   CardContent,
   Typography,
   Container,
   Box,
-  Grid
-} from '@mui/material';
+  Grid,
+} from "@mui/material";
 // import GitHubIcon from '@material-ui/icons/GitHub';
 // import AddIcon from '@mui/icons-material/Add';
 
 export default function ProjectCard(props) {
   return (
-    <Container maxWidth={false} disableGutters sx={{ maxWidth: '650px' }}>
-      <Card sx={{ borderRadius: '20px', mb: '30px' }}>
-        <Box sx={{ textAlign: 'center' }}>
+    <Container maxWidth={false} disableGutters sx={{ maxWidth: "650px" }}>
+      <Card sx={{ borderRadius: "20px", mb: "30px" }}>
+        <Box sx={{ textAlign: "center" }}>
           <Typography
             variant="h4"
-            sx={{ pt: '25px', color: 'white', backgroundColor: '#f50057' }}
+            sx={{ pt: "25px", color: "white", backgroundColor: "#f50057" }}
           >
-            {' '}
-            {props.name}{' '}
+            {" "}
+            {props.name}{" "}
           </Typography>
         </Box>
 
         <CardContent>
           <Typography
             variant="h5"
-            sx={{ pb: '15px', textAlign: 'center', color: '#01579b' }}
+            sx={{ pb: "15px", textAlign: "center", color: "#01579b" }}
           >
-            DESCRIPTION{' '}
+            DESCRIPTION{" "}
           </Typography>
-          <Typography variant="h6" sx={{ pb: '15px', textAlign: 'center' }}>
+          <Typography variant="h6" sx={{ pb: "15px", textAlign: "center" }}>
             {props.description}
           </Typography>
           <Typography
             variant="h5"
-            sx={{ pb: '15px', textAlign: 'center', color: '#01579b' }}
+            sx={{ pb: "15px", textAlign: "center", color: "#01579b" }}
           >
-            TOOLS USED{' '}
+            TOOLS USED{" "}
           </Typography>
 
           <Box
             sx={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'center'
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
             }}
           >
-            <Grid container sx={{ justifyContent: 'center' }}>
+            <Grid container sx={{ justifyContent: "center" }}>
               <Grid item>
                 <Logo logo={props.logoHTML} />
               </Grid>
