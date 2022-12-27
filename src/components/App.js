@@ -39,7 +39,7 @@ export default function App() {
       <Box sx={{width: '25%', margin: 'auto'}}>
       <Section text='ABOUT'/>
       </Box>
-      <Box sx={{width: '50%', margin: 'auto', textAlign:'center', justifyContent:'center', maxWidth:'677px'}}>
+      <Box sx={{margin: 'auto', textAlign:'center', justifyContent:'center',  maxWidth:'677px'}}>
       <About/>
       </Box>
       </Container>
