@@ -26,9 +26,10 @@ function createProjectCard(data) {
 export default function App() {
   return (
     <Container disableGutters maxWidth={false}>
-      {' '}
-      {/* ---------------Navbar--------------- */} <Navbar />
-      {/* ---------------About--------------- */}{' '}
+      {/* ---------------Navbar--------------- */}
+      <Navbar />
+
+      {/* ---------------About--------------- */}
       <Container
         maxWidth={false}
         sx={{ backgroundColor: 'black', p: '10px', mt: '64px', mr: '0px' }}
@@ -36,6 +37,7 @@ export default function App() {
         <Box sx={{ width: '25%', margin: 'auto' }}>
           <Section text="ABOUT" />
         </Box>
+
         <Box
           sx={{
             margin: 'auto',
@@ -45,9 +47,11 @@ export default function App() {
           }}
         >
           <About />
-        </Box>{' '}
+        </Box>
       </Container>
+
       {/* ---------------Projects--------------- */}
+
       <Container
         maxWidth={false}
         sx={{ backgroundColor: '#212121', p: '10px' }}
@@ -55,11 +59,11 @@ export default function App() {
         <Box sx={{ width: '25%', margin: 'auto' }}>
           <Section text="PROJECTS" />
         </Box>
+
         <Box sx={{ justifyContent: 'center', margin: 'auto', width: '50%' }}>
-          {' '}
-          {data.map(createProjectCard)}{' '}
-        </Box>{' '}
-      </Container>{' '}
+          {data.map(createProjectCard)}
+        </Box>
+      </Container>
     </Container>
   );
 }

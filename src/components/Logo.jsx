@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export default function Logo(props) {
   if (props.logo) {
@@ -6,4 +6,3 @@ export default function Logo(props) {
   }
   return null;
 }
-
