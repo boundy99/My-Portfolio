@@ -1,5 +1,5 @@
-import React from 'react'
-import Logo from './Logo'
+import React from 'react';
+import Logo from './Logo';
 import { Card, CardContent,  Typography, Container, Box, Grid} from '@mui/material';
 
 export default function ProjectCard(props) {
