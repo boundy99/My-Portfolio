@@ -31,6 +31,7 @@ export default function App() {
 
   return (
     <Container disableGutters maxWidth={false}>
+
     {/* ---------------Navbar--------------- */}
       <Navbar />
 
@@ -44,7 +45,7 @@ export default function App() {
       <Box sx={{ margin: 'auto', textAlign:'center', justifyContent:'center',  maxWidth:'677px'}}>
       <About/>
       </Box>
-      
+
       </Container>
 
       {/* ---------------Projects--------------- */}
@@ -63,7 +64,6 @@ export default function App() {
   
     </Container>
   )
-  
 }
 
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from './Logo';
 import { Card, CardContent,  Typography, Container, Box, Grid} from '@mui/material';
+// import GitHubIcon from '@material-ui/icons/GitHub';
+// import AddIcon from '@mui/icons-material/Add';
 
 export default function ProjectCard(props) {
   return (
@@ -9,8 +11,7 @@ export default function ProjectCard(props) {
     <Card sx={{borderRadius: '20px', mb: '30px'}}>
 
     <Box sx={{textAlign: 'center'}}>
-    
-    <Typography variant="h4" sx={{pt: '25px', color: 'white', backgroundColor:'#f50057'}}> {props.name}</Typography>
+    <Typography variant="h4" sx={{pt: '25px', color: 'white', backgroundColor:'#f50057'}}> {props.name} </Typography>
     </Box>
 
     
