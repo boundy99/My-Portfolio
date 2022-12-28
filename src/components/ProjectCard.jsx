@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./Logo";
 import {
   Card,
@@ -13,6 +13,15 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 // import AddIcon from '@mui/icons-material/Add';
 
 export default function ProjectCard(props) {
+  const [isHovered, setHovered] = useState(false);
+
+  function handleChangeOn() {
+    setHovered(true);
+  }
+
+  function handleChangeOut() {
+    setHovered(false);
+  }
   return (
     <Container
       maxWidth={false}
@@ -20,10 +29,15 @@ export default function ProjectCard(props) {
       sx={{ maxWidth: "650px", minWidth: "390px" }}
     >
       <Card sx={{ borderRadius: "20px", mb: "30px" }}>
-        <Box sx={{ textAlign: "center" }}>
+        <Box sx={{}}>
           <Typography
             variant="h4"
-            sx={{ pt: "25px", color: "white", backgroundColor: "#f50057" }}
+            sx={{
+              pt: "25px",
+              color: "white",
+              backgroundColor: "#f50057",
+              textAlign: "center",
+            }}
           >
             {" "}
             {props.name}{" "}
@@ -33,7 +47,12 @@ export default function ProjectCard(props) {
               href={props.link}
               target="_blank"
             >
-              <GitHubIcon fontSize="inherit" />{" "}
+              <GitHubIcon
+                fontSize="inherit"
+                onMouseOver={handleChangeOn}
+                onMouseOut={handleChangeOut}
+                color={isHovered ? "primary" : "null"}
+              />{" "}
             </Link>
           </Typography>
         </Box>
@@ -63,33 +82,13 @@ export default function ProjectCard(props) {
             }}
           >
             <Grid container sx={{ justifyContent: "center" }}>
-              <Grid item>
-                <Logo logo={props.logoHTML} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoCSS} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoJs} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoEJs} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoReact} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoNodeJs} />
-              </Grid>
-
-              <Grid item>
-                <Logo logo={props.logoMongoDB} />
-              </Grid>
+              <Logo logo={props.logoHTML} />
+              <Logo logo={props.logoCSS} />
+              <Logo logo={props.logoJs} />
+              <Logo logo={props.logoEJs} />
+              <Logo logo={props.logoReact} />
+              <Logo logo={props.logoNodeJs} />
+              <Logo logo={props.logoMongoDB} />
             </Grid>
           </Box>
         </CardContent>
