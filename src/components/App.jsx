@@ -12,6 +12,7 @@ function createProjectCard(data) {
     <ProjectCard
       key={data.id}
       name={data.name}
+      link={data.link}
       description={data.description}
       logoHTML={data.logoHTML}
       logoCSS={data.logoCSS}
@@ -30,44 +31,42 @@ export default function App() {
 
       <Navbar />
 
-      <Container disableGutters maxWidth={false} sx={{ mt: "64px" }}>
-        {/* ---------------About--------------- */}
-        <Container
-          maxWidth={false}
-          sx={{ backgroundColor: "black", p: "10px", mr: "0px" }}
-          id="about"
+      {/* ---------------About--------------- */}
+      <Container
+        maxWidth={false}
+        sx={{ backgroundColor: "black", p: "10px", mr: "0px" }}
+        id="about"
+      >
+        <Box sx={{ width: "25%", margin: "auto" }}>
+          <Section text="ABOUT" />
+        </Box>
+
+        <Box
+          sx={{
+            margin: "auto",
+            textAlign: "center",
+            justifyContent: "center",
+            maxWidth: "677px",
+          }}
         >
-          <Box sx={{ width: "25%", margin: "auto" }}>
-            <Section text="ABOUT" />
-          </Box>
+          <About />
+        </Box>
+      </Container>
 
-          <Box
-            sx={{
-              margin: "auto",
-              textAlign: "center",
-              justifyContent: "center",
-              maxWidth: "677px",
-            }}
-          >
-            <About />
-          </Box>
-        </Container>
+      {/* ---------------Projects--------------- */}
 
-        {/* ---------------Projects--------------- */}
+      <Container
+        maxWidth={false}
+        sx={{ backgroundColor: "#212121", p: "10px" }}
+        id="projects"
+      >
+        <Box sx={{ width: "25%", margin: "auto" }}>
+          <Section text="PROJECTS" />
+        </Box>
 
-        <Container
-          maxWidth={false}
-          sx={{ backgroundColor: "#212121", p: "10px" }}
-          id="projects"
-        >
-          <Box sx={{ width: "25%", margin: "auto" }}>
-            <Section text="PROJECTS" />
-          </Box>
-
-          <Box sx={{ justifyContent: "center", margin: "auto", width: "50%" }}>
-            {data.map(createProjectCard)}
-          </Box>
-        </Container>
+        <Box sx={{ margin: "auto", width: "50%" }}>
+          {data.map(createProjectCard)}
+        </Box>
       </Container>
     </Container>
   );
