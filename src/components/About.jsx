@@ -2,9 +2,7 @@ import React from "react";
 import { Container, Typography } from "@mui/material";
 export default function About() {
   return (
-    <Container
-      sx={{ fontSize: "20px", fontWeight: "10px", letterSpacing: "5px" }}
-    >
+    <Container sx={{ fontSize: "20px", fontWeight: "10px" }}>
       <Typography variant="inherit">Hi, I am Abdoulaye</Typography>
 
       <Typography variant="inherit" sx={{ pt: "18px" }}>
