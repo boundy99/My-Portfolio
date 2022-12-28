@@ -1,16 +1,21 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import React, { useState } from "react";
+
 import MenuIcon from "@mui/icons-material/Menu";
-import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+
+import {
+  AppBar,
+  Box,
+  Typography,
+  Toolbar,
+  IconButton,
+  Menu,
+  Button,
+  MenuItem,
+  Link,
+} from "@mui/material";
 
 export default function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -72,16 +77,38 @@ export default function Navbar() {
               display: { xs: "block", md: "none" },
             }}
           >
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">ABOUT</Typography>
+            <MenuItem sx={{ justifyContent: "center" }}>
+              <Link
+                onClick={handleCloseNavMenu}
+                href="#about"
+                underline="none"
+                color="inherit"
+                textAlign="center"
+              >
+                <Typography>ABOUT</Typography>
+              </Link>
             </MenuItem>
 
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">PROJECTS</Typography>
+            <MenuItem sx={{ justifyContent: "center" }}>
+              <Link
+                onClick={handleCloseNavMenu}
+                href="#projects"
+                underline="none"
+                color="inherit"
+              >
+                <Typography textAlign="center">PROJECTS</Typography>
+              </Link>
             </MenuItem>
 
-            <MenuItem onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">CONTACT</Typography>
+            <MenuItem sx={{ justifyContent: "center" }}>
+              <Link
+                onClick={handleCloseNavMenu}
+                href="#contact"
+                underline="none"
+                color="inherit"
+              >
+                <Typography textAlign="center">CONTACT</Typography>
+              </Link>
             </MenuItem>
           </Menu>
         </Box>
@@ -113,6 +140,7 @@ export default function Navbar() {
           <Button
             onClick={handleCloseNavMenu}
             sx={{ my: 2, color: "white", display: "block" }}
+            href="#about"
           >
             ABOUT
           </Button>
@@ -128,6 +156,7 @@ export default function Navbar() {
           <Button
             onClick={handleCloseNavMenu}
             sx={{ my: 2, color: "white", display: "block" }}
+            href="#contact"
           >
             CONTACT
           </Button>

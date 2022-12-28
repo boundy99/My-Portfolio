@@ -26,14 +26,16 @@ function createProjectCard(data) {
 export default function App() {
   return (
     <Container disableGutters maxWidth={false}>
-      <Navbar />
-      <Container disableGutters maxWidth={false}>
-        {/* ---------------Navbar--------------- */}
+      {/* ---------------Navbar--------------- */}
 
+      <Navbar />
+
+      <Container disableGutters maxWidth={false} sx={{ mt: "64px" }}>
         {/* ---------------About--------------- */}
         <Container
           maxWidth={false}
           sx={{ backgroundColor: "black", p: "10px", mr: "0px" }}
+          id="about"
         >
           <Box sx={{ width: "25%", margin: "auto" }}>
             <Section text="ABOUT" />
