@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["About", "Projects", "Testimonials", "Contacts"];
+const pages = ["About", "Projects", "Testimonials", "Contact"];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -74,11 +74,17 @@ export default function Navbar() {
               display: { xs: "block", md: "none" },
             }}
           >
-            {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
-            ))}
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">ABOUT</Typography>
+            </MenuItem>
+
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">PROJECTS</Typography>
+            </MenuItem>
+
+            <MenuItem onClick={handleCloseNavMenu}>
+              <Typography textAlign="center">CONTACT</Typography>
+            </MenuItem>
           </Menu>
         </Box>
         <Typography
@@ -106,15 +112,27 @@ export default function Navbar() {
             display: { xs: "none", md: "flex" },
           }}
         >
-          {pages.map((page) => (
-            <Button
-              key={page}
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              {page}
-            </Button>
-          ))}
+          <Button
+            onClick={handleCloseNavMenu}
+            sx={{ my: 2, color: "white", display: "block" }}
+          >
+            ABOUT
+          </Button>
+
+          <Button
+            onClick={handleCloseNavMenu}
+            sx={{ my: 2, color: "white", display: "block" }}
+            href="#projects"
+          >
+            PROJECTS
+          </Button>
+
+          <Button
+            onClick={handleCloseNavMenu}
+            sx={{ my: 2, color: "white", display: "block" }}
+          >
+            CONTACT
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>

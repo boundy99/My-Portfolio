@@ -2,7 +2,7 @@ body {
     font-family: 'Raleway';
     color: white;
     background-color: white;
-    margin: 0;
+    margin: 55px 0px;
 }
 
 img {
@@ -16,4 +16,8 @@ img {
     font-size: 13px;
     text-align: center;
     font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
 }
