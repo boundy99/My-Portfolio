@@ -13,7 +13,11 @@ import {
 
 export default function ProjectCard(props) {
   return (
-    <Container maxWidth={false} disableGutters sx={{ maxWidth: "650px" }}>
+    <Container
+      maxWidth={false}
+      disableGutters
+      sx={{ maxWidth: "650px", minWidth: "390px" }}
+    >
       <Card sx={{ borderRadius: "20px", mb: "30px" }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography
