@@ -51,7 +51,7 @@ export default function ProjectCard(props) {
                 fontSize="inherit"
                 onMouseOver={handleChangeOn}
                 onMouseOut={handleChangeOut}
-                color={isHovered ? "primary" : "null"}
+                color={isHovered ? "action" : "null"}
               />{" "}
             </Link>
           </Typography>
