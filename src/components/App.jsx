@@ -4,7 +4,7 @@ import Section from "./Section";
 import About from "./About";
 import ProjectCard from "./ProjectCard";
 import data from "../data";
-
+import Carousel from "react-material-ui-carousel";
 import { Container, Box } from "@mui/material";
 
 function createProjectCard(data) {
@@ -64,9 +64,9 @@ export default function App() {
           <Section text="PROJECTS" />
         </Box>
 
-        <Box sx={{ margin: "auto", width: "50%" }}>
+        <Carousel sx={{ margin: "auto", width: "50%" }}>
           {data.map(createProjectCard)}
-        </Box>
+        </Carousel>
       </Container>
     </Container>
   );
