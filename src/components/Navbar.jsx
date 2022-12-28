@@ -9,8 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["About", "Projects", "Testimonials", "Contact"];
-
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
