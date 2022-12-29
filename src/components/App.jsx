@@ -68,6 +68,7 @@ export default function App() {
         <Carousel
           navButtonsAlwaysVisible={true}
           interval={null}
+          animation={"slide"}
           sx={{ margin: "auto", minWidth: "390px" }}
         >
           {data.map(createProjectCard)}
