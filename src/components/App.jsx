@@ -68,7 +68,6 @@ export default function App() {
         <Carousel
           navButtonsAlwaysVisible={true}
           interval={null}
-          animation={"slide"}
           sx={{ margin: "auto", minWidth: "390px" }}
         >
           {data.map(createProjectCard)}
@@ -79,8 +78,6 @@ export default function App() {
 
       <Container
         maxWidth={false}
-        showArrows={true}
-        showNavigationArrows="always"
         sx={{ backgroundColor: "#616161", p: "10px" }}
         id="contact"
       >
