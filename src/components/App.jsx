@@ -64,7 +64,7 @@ export default function App() {
           <Section text="PROJECTS" />
         </Box>
 
-        <Carousel sx={{ margin: "auto", width: "50%" }}>
+        <Carousel sx={{ margin: "auto", width: "50%", minWidth: "390px" }}>
           {data.map(createProjectCard)}
         </Carousel>
       </Container>

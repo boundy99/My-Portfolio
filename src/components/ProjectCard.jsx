@@ -23,11 +23,7 @@ export default function ProjectCard(props) {
     setHovered(false);
   }
   return (
-    <Container
-      maxWidth={false}
-      disableGutters
-      sx={{ maxWidth: "650px", minWidth: "390px" }}
-    >
+    <Container maxWidth={false} disableGutters sx={{ maxWidth: "650px" }}>
       <Card sx={{ borderRadius: "20px", mb: "30px" }}>
         <Box sx={{}}>
           <Typography
@@ -60,7 +56,11 @@ export default function ProjectCard(props) {
         <CardContent>
           <Typography
             variant="h5"
-            sx={{ pb: "15px", textAlign: "center", color: "#01579b" }}
+            sx={{
+              pb: "15px",
+              textAlign: "center",
+              color: "#01579b",
+            }}
           >
             DESCRIPTION{" "}
           </Typography>
