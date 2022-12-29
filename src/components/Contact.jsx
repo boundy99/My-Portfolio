@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Typography, Container, Box, Grid, Link } from "@mui/material";
+import { Typography, Container, Grid, Link } from "@mui/material";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function Contact() {
