@@ -11,7 +11,7 @@ export default function Section(props) {
         p: "30px",
       }}
     >
-      <Typography variant="inherit">{props.text}</Typography>
+      <Typography variant="inherit"> {props.text} </Typography>{" "}
     </Container>
   );
 }

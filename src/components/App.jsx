@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Section from "./Section";
 import About from "./About";
 import ProjectCard from "./ProjectCard";
+import Contact from "./Contact";
 import data from "../data";
 import Carousel from "react-material-ui-carousel";
 import { Container, Box } from "@mui/material";
@@ -67,6 +68,29 @@ export default function App() {
         <Carousel sx={{ margin: "auto", width: "50%", minWidth: "390px" }}>
           {data.map(createProjectCard)}
         </Carousel>
+      </Container>
+
+      {/* ---------------Contact--------------- */}
+
+      <Container
+        maxWidth={false}
+        sx={{ backgroundColor: "#616161", p: "10px" }}
+        id="contact"
+      >
+        <Box sx={{ width: "25%", margin: "auto" }}>
+          <Section text="CONTACT" />
+        </Box>
+
+        <Box
+          sx={{
+            margin: "auto",
+            textAlign: "center",
+            justifyContent: "center",
+            maxWidth: "677px",
+          }}
+        >
+          <Contact />
+        </Box>
       </Container>
     </Container>
   );
