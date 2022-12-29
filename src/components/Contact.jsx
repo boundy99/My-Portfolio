@@ -3,14 +3,23 @@ import { Typography, Container, Grid, Link } from "@mui/material";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function Contact() {
-  const [isHovered, setHovered] = useState(false);
+  const [isGitHubHovered, setGitHubHovered] = useState(false);
+  const [isLinkedInHovered, setLinkedInHovered] = useState(false);
 
-  function handleChangeOn() {
-    setHovered(true);
+  function handleGitHubChangeOn() {
+    setGitHubHovered(true);
   }
 
-  function handleChangeOut() {
-    setHovered(false);
+  function handleGitHubChangeOut() {
+    setGitHubHovered(false);
+  }
+
+  function handleLinkedInChangeOn() {
+    setLinkedInHovered(true);
+  }
+
+  function handleLinkedInChangeOut() {
+    setLinkedInHovered(false);
   }
 
   return (
@@ -28,9 +37,9 @@ export default function Contact() {
         >
           <GitHubIcon
             fontSize="inherit"
-            onMouseOver={handleChangeOn}
-            onMouseOut={handleChangeOut}
-            color={isHovered ? "action" : "null"}
+            onMouseOver={handleGitHubChangeOn}
+            onMouseOut={handleGitHubChangeOut}
+            color={isGitHubHovered ? "action" : "null"}
           />{" "}
         </Link>
 
@@ -42,9 +51,9 @@ export default function Contact() {
         >
           <LinkedInIcon
             fontSize="inherit"
-            onMouseOver={handleChangeOn}
-            onMouseOut={handleChangeOut}
-            color={isHovered ? "action" : "null"}
+            onMouseOver={handleLinkedInChangeOn}
+            onMouseOut={handleLinkedInChangeOut}
+            color={isLinkedInHovered ? "action" : "null"}
           />{" "}
         </Link>
       </Grid>
