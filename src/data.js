@@ -56,9 +56,9 @@ const data = [{
         logoHTML: htmlImage,
         logoCSS: cssImage,
         logoJs: null,
-        logoEJs: null,
+        logoEJs: ejsImage,
         logoReact: null,
-        logoNodeJs: null,
+        logoNodeJs: nodejsImage,
         logoMongoDB: null
     }
 ];

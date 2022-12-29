@@ -10,7 +10,6 @@ import {
   Link,
 } from "@mui/material";
 import GitHubIcon from "@material-ui/icons/GitHub";
-// import AddIcon from '@mui/icons-material/Add';
 
 export default function ProjectCard(props) {
   const [isHovered, setHovered] = useState(false);
