@@ -39,7 +39,7 @@ export default function Navbar() {
           variant="h6"
           noWrap
           component="a"
-          href="/"
+          href="#home"
           sx={{
             mr: 2,
             display: { xs: "none", md: "flex" },
@@ -120,7 +120,7 @@ export default function Navbar() {
           variant="h5"
           noWrap
           component="a"
-          href=""
+          href="#home"
           sx={{
             mr: 2,
             display: { xs: "flex", md: "none" },
@@ -141,6 +141,14 @@ export default function Navbar() {
             display: { xs: "none", md: "flex" },
           }}
         >
+          <Button
+            onClick={handleCloseNavMenu}
+            sx={{ my: 2, color: "white", display: "block" }}
+            href="#home"
+          >
+            HOME
+          </Button>
+
           <Button
             onClick={handleCloseNavMenu}
             sx={{ my: 2, color: "white", display: "block" }}

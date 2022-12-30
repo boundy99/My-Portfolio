@@ -46,6 +46,7 @@ export default function App() {
           p: "10px",
           height: "100vh",
         }}
+        id="home"
       >
         <Box
           sx={{
