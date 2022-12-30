@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Section from "./Section";
+import Header from "./Header";
 import About from "./About";
 import ProjectCard from "./ProjectCard";
 import Contact from "./Contact";
@@ -33,7 +34,7 @@ export default function App() {
 
       <Navbar />
 
-      {/* ---------------About--------------- */}
+      {/* ---------------Header--------------- */}
       <Container
         maxWidth={false}
         sx={{
@@ -43,24 +44,40 @@ export default function App() {
           alignItems: "center",
           justifyContent: "center",
           p: "10px",
-          mr: "0px",
+          height: "100vh",
+        }}
+      >
+        <Box
+          sx={{
+            textAlign: "center",
+          }}
+        >
+          <Header />
+        </Box>
+      </Container>
+
+      {/* ---------------About--------------- */}
+      <Container
+        maxWidth={false}
+        sx={{
+          backgroundColor: "white",
+          color: "black",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          p: "10px",
           height: "100vh",
         }}
         id="about"
       >
-        <Container>
-          <Box>
-            <Section text="ABOUT" />
-          </Box>
-
-          <Box
-            sx={{
-              textAlign: "center",
-            }}
-          >
-            <About />
-          </Box>
-        </Container>
+        <Box
+          sx={{
+            textAlign: "center",
+          }}
+        >
+          <About />
+        </Box>
       </Container>
 
       {/* ---------------Projects--------------- */}

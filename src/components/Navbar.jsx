@@ -26,7 +26,10 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: "#212121" }}>
+    <AppBar
+      position="sticky"
+      sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+    >
       <Toolbar disableGutters sx={{ height: "18px", pl: "10px", pr: "10px" }}>
         <Typography
           variant="h6"
