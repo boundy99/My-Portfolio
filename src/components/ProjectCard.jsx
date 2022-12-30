@@ -29,7 +29,7 @@ export default function ProjectCard(props) {
             sx={{
               pt: "25px",
               color: "white",
-              backgroundColor: "#ff8f00",
+              backgroundColor: "#ffb300",
               textAlign: "center",
             }}
           >
