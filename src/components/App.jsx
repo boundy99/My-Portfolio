@@ -35,43 +35,63 @@ export default function App() {
       {/* ---------------About--------------- */}
       <Container
         maxWidth={false}
-        sx={{ backgroundColor: "black", p: "10px", mr: "0px" }}
+        sx={{
+          backgroundColor: "black",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          p: "10px",
+          mr: "0px",
+          height: "100vh",
+        }}
         id="about"
       >
-        <Box sx={{ width: "25%", margin: "auto" }}>
-          <Section text="ABOUT" />
-        </Box>
+        <Container>
+          <Box sx={{ width: "25%", margin: "auto" }}>
+            <Section text="ABOUT" />
+          </Box>
 
-        <Box
-          sx={{
-            margin: "auto",
-            textAlign: "center",
-            justifyContent: "center",
-            maxWidth: "677px",
-          }}
-        >
-          <About />
-        </Box>
+          <Box
+            sx={{
+              margin: "auto",
+              textAlign: "center",
+              justifyContent: "center",
+            }}
+          >
+            <About />
+          </Box>
+        </Container>
       </Container>
 
       {/* ---------------Projects--------------- */}
 
       <Container
         maxWidth={false}
-        sx={{ backgroundColor: "#212121", p: "10px" }}
+        sx={{
+          backgroundColor: "#212121",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          p: "10px",
+          height: "100vh",
+        }}
         id="projects"
       >
-        <Box sx={{ width: "25%", margin: "auto" }}>
-          <Section text="PROJECTS" />
-        </Box>
+        <Container>
+          <Box sx={{ width: "25%", margin: "auto" }}>
+            <Section text="PROJECTS" />
+          </Box>
 
-        <Carousel
-          navButtonsAlwaysVisible={true}
-          interval={null}
-          sx={{ margin: "auto", minWidth: "390px" }}
-        >
-          {data.map(createProjectCard)}
-        </Carousel>
+          <Carousel
+            navButtonsAlwaysVisible={true}
+            interval={null}
+            sx={{ margin: "auto" }}
+          >
+            {data.map(createProjectCard)}
+          </Carousel>
+        </Container>
       </Container>
 
       {/* ---------------Contact--------------- */}
@@ -90,7 +110,6 @@ export default function App() {
             margin: "auto",
             textAlign: "center",
             justifyContent: "center",
-            maxWidth: "677px",
           }}
         >
           <Contact />
