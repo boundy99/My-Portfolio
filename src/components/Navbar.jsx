@@ -28,7 +28,11 @@ export default function Navbar() {
   return (
     <AppBar
       position="sticky"
-      sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+      sx={{
+        backgroundColor: "transparent",
+        boxShadow: "none",
+        color: "inherit",
+      }}
     >
       <Toolbar disableGutters sx={{ height: "18px", pl: "10px", pr: "10px" }}>
         <Typography
@@ -45,7 +49,7 @@ export default function Navbar() {
             textDecoration: "none",
           }}
         >
-          MYPORTFOLIO
+          ABDOULAYE BOUNDY DJIKINE
         </Typography>
 
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -128,7 +132,7 @@ export default function Navbar() {
             textDecoration: "none",
           }}
         >
-          MYPORTFOLIO
+          ABDOULAYE BOUNDY DJIKINE
         </Typography>
         <Box
           sx={{
