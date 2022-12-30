@@ -48,15 +48,13 @@ export default function App() {
         id="about"
       >
         <Container>
-          <Box sx={{ width: "25%", margin: "auto" }}>
+          <Box>
             <Section text="ABOUT" />
           </Box>
 
           <Box
             sx={{
-              margin: "auto",
               textAlign: "center",
-              justifyContent: "center",
             }}
           >
             <About />
@@ -82,15 +80,11 @@ export default function App() {
         id="projects"
       >
         <Container maxWidth={false} disableGutters>
-          <Box sx={{ margin: "auto" }}>
+          <Box>
             <Section text="PROJECTS" />
           </Box>
 
-          <Carousel
-            navButtonsAlwaysVisible={true}
-            interval={null}
-            sx={{ margin: "auto" }}
-          >
+          <Carousel navButtonsAlwaysVisible={true} interval={null}>
             {data.map(createProjectCard)}
           </Carousel>
         </Container>
