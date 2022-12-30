@@ -84,7 +84,11 @@ export default function App() {
             <Section text="PROJECTS" />
           </Box>
 
-          <Carousel navButtonsAlwaysVisible={true} interval={null}>
+          <Carousel
+            navButtonsProps={{ size: "large" }}
+            navButtonsAlwaysVisible={true}
+            interval={null}
+          >
             {data.map(createProjectCard)}
           </Carousel>
         </Container>
