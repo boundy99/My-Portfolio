@@ -72,15 +72,17 @@ export default function App() {
           backgroundColor: "#212121",
           display: "flex",
           flexDirection: "column",
+          flexWrap: "nowrap",
           alignItems: "center",
           justifyContent: "center",
           p: "10px",
           height: "100vh",
+          overflow: "scroll",
         }}
         id="projects"
       >
-        <Container>
-          <Box sx={{ width: "25%", margin: "auto" }}>
+        <Container maxWidth={false} disableGutters>
+          <Box sx={{ margin: "auto" }}>
             <Section text="PROJECTS" />
           </Box>
 
@@ -101,7 +103,7 @@ export default function App() {
         sx={{ backgroundColor: "#616161", p: "10px" }}
         id="contact"
       >
-        <Box sx={{ width: "25%", margin: "auto" }}>
+        <Box sx={{ margin: "auto" }}>
           <Section text="CONTACT" />
         </Box>
 

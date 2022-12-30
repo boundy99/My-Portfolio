@@ -6,7 +6,6 @@ import {
   Typography,
   Container,
   Box,
-  Grid,
   Link,
 } from "@mui/material";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -80,7 +79,13 @@ export default function ProjectCard(props) {
               justifyContent: "center",
             }}
           >
-            <Grid container sx={{ justifyContent: "center" }}>
+            <Container
+              container
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <Logo logo={props.logoHTML} />
               <Logo logo={props.logoCSS} />
               <Logo logo={props.logoJs} />
@@ -88,7 +93,7 @@ export default function ProjectCard(props) {
               <Logo logo={props.logoReact} />
               <Logo logo={props.logoNodeJs} />
               <Logo logo={props.logoMongoDB} />
-            </Grid>
+            </Container>
           </Box>
         </CardContent>
       </Card>
