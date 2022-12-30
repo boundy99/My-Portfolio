@@ -6,6 +6,7 @@ import ProjectCard from "./ProjectCard";
 import Contact from "./Contact";
 import data from "../data";
 import Carousel from "react-material-ui-carousel";
+
 import { Container, Box } from "@mui/material";
 
 function createProjectCard(data) {
@@ -70,12 +71,10 @@ export default function App() {
           backgroundColor: "#212121",
           display: "flex",
           flexDirection: "column",
-          flexWrap: "nowrap",
           alignItems: "center",
           justifyContent: "center",
           p: "10px",
           height: "100vh",
-          overflow: "scroll",
         }}
         id="projects"
       >
@@ -98,22 +97,32 @@ export default function App() {
 
       <Container
         maxWidth={false}
-        sx={{ backgroundColor: "#616161", p: "10px" }}
+        sx={{
+          backgroundColor: "#616161",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          p: "10px",
+        }}
         id="contact"
       >
-        <Box sx={{ margin: "auto" }}>
-          <Section text="CONTACT" />
-        </Box>
+        <Container maxWidth={false} disableGutters>
+          <Box sx={{ margin: "auto" }}>
+            <Section text="CONTACT" />
+          </Box>
 
-        <Box
-          sx={{
-            margin: "auto",
-            textAlign: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Contact />
-        </Box>
+          <Box
+            sx={{
+              margin: "auto",
+              textAlign: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Contact />
+          </Box>
+        </Container>
       </Container>
     </Container>
   );
