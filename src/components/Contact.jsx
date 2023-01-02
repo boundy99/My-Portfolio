@@ -62,7 +62,11 @@ export default function Contact() {
         />{" "}
       </Link>
 
-      <Button sx={{ color: "inherit" }} variant="outlined">
+      <Button
+        sx={{ color: "inherit" }}
+        variant="outlined"
+        href="mailto:abdoulayeboundydjikine@gmail.com"
+      >
         CONTACT ME
       </Button>
     </Container>
