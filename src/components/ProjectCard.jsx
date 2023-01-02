@@ -8,7 +8,7 @@ import {
   Box,
   Link,
 } from "@mui/material";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function ProjectCard(props) {
   const [isHovered, setHovered] = useState(false);

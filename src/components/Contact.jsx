@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Link } from "@mui/material";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function Contact() {
   const [isGitHubHovered, setGitHubHovered] = useState(false);
