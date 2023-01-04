@@ -33,8 +33,7 @@ export default function ProjectCard(props) {
               textAlign: "center",
             }}
           >
-            {" "}
-            {props.name}{" "}
+            {props.name}
             <Link
               underline="none"
               color="inherit"
@@ -80,7 +79,6 @@ export default function ProjectCard(props) {
             }}
           >
             <Container
-              container
               sx={{
                 display: "flex",
                 justifyContent: "center",

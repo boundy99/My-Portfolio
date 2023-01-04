@@ -62,7 +62,7 @@ export default function App() {
       <Container
         maxWidth={false}
         sx={{
-          backgroundColor: "#ffb74d",
+          backgroundColor: "#ffa726",
           color: "white",
           display: "flex",
           flexDirection: "column",
@@ -73,7 +73,7 @@ export default function App() {
         }}
         id="about"
       >
-        <Section text="A little about me" />
+        <Section text="A little bit about myself" />
         <Box
           sx={{
             textAlign: "center",
@@ -129,17 +129,11 @@ export default function App() {
         id="contact"
       >
         <Container maxWidth={false} disableGutters>
-          <Box sx={{ margin: "auto" }}>
-            <Section text="CONTACT (IN PROGRESS)" />
+          <Box>
+            <Section text="CONTACT" />
           </Box>
 
-          <Box
-            sx={{
-              margin: "auto",
-              textAlign: "center",
-              justifyContent: "center",
-            }}
-          >
+          <Box>
             <Contact />
           </Box>
         </Container>
